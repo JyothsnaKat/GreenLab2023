@@ -1,0 +1,5 @@
+This folder contains all the raw data of each VR application collected from OVR Metrics Tool obtained from the VR device.
+
+The data was recorded, while playing the application. Each application folder contains 3 files which indicates 3 runs.
+
+Each run was performed for 30 minutes.
