@@ -9,8 +9,8 @@ We utilized the "preprocess.py" script to process the raw data and calculate the
 ## Descriptive Statistics
 For a comprehensive understanding of each domain, we offer descriptive statistics. The "des_statistics.R" script, located in the "descriptive_statistics" folder, is used to generate these statistics. 
 
-## Energy Consumption Calculation
-The "energy_compute" script serves the purpose of computing energy consumption for each run and consolidating it into a single data frame. This data frame can be found in the "Pre-Processed Data 1" folder. This is a crucial step in understanding energy consumption patterns.
+## Combined records
+We have combined all the records from all runs and applications and saved it in the file CombinedRecords.csv. In this file we have also appended for each record a field called Domain and application which refers to the domain name and application name the record belongs to.
 
 ## Normality Testing
 To ensure the robustness of our analysis, we have employed the "normality_test" script. This script checks for normality in energy consumption and total power across different applications. It includes scripts for generating QQ plots and performing the Shapiro-Wilk test. This step helps validate the assumptions required for some statistical tests.
