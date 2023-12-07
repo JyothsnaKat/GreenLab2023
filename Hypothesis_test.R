@@ -1,8 +1,8 @@
-data <- read.csv("D:/Green lab/ProcessedReq2.csv")
+data <- read.csv("D:/MS VU/Green lab/GreenLab2023/final.csv")
 print(data)
 
-# This is to check for Energy consumed against application name
-kruskal.test(Energy_consumed ~ Application_name, data=data)
-
 # This is to check for Energy consumed against Domain name
-kruskal.test(Energy_consumed ~ Domain_name, data=data)
+kruskal.test(EC ~ Domain, data=data)
+
+# This is to check for Energy consumed against application name
+kruskal.test(EC ~ Application, data=data)
