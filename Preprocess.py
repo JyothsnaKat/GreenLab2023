@@ -15,6 +15,14 @@ def process_csv(file_path, updatefilepath):
 
     # Round the 'Total_power' values 
     df['TP_round'] = df['Total_power'].round(decimals = 2)
+    
+    # Calculate time between each record in seconds
+    total_records = len(df)
+    total_time_minutes = 30
+    time_between_records_seconds = total_time_minutes * 60 / total_records
+
+    # Calculate energy consumption (EC) for each record
+    df['EC'] = (df['Total_power'] * time_between_records_seconds).round(decimals=2)
 
     # Save the modified dataframe back to the csv file
     df.to_csv(updatefilepath, index=False)
